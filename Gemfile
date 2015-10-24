@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+
+# Auth
+gem 'devise'
+
 # bootstrap
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'

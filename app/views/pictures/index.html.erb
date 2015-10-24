@@ -1,7 +1,7 @@
 <%- model_class = Picture -%>
 <div class="page-header">
 </div>
-<table class="table table-striped">
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= link_to picture.id, picture_path(picture) %></td>
         <td><%= picture.name %></td>
-        <td><%= image_tag picture.image.icon, size: "50x50", alt: picture.name %></td>
+        <td><%= image_tag picture.image.icon, size: "50x50", alt: picture.name, class: 'img-thumbnail' %></td>
         <td><%=l picture.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
@@ -34,4 +34,4 @@
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_picture_path,
-            :class => 'btn btn-primary' %>
+            :class => 'btn btn-default' %>
