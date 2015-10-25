@@ -4,6 +4,12 @@ source 'https://rubygems.org'
 # Auth
 gem 'devise'
 
+# Twitter Auth
+gem 'omniauth-twitter'
+
+# Facebook Auth
+gem 'omniauth-facebook'
+
 # bootstrap
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
